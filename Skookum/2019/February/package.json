@@ -1,0 +1,10 @@
+{
+  "name": "2019-02-skookum-coding-challenge",
+  "version": "1.0.0",
+  "description": "Code Golf challenge for monthly coding challenges",
+  "main": "dist/index.js",
+  "repository": "https://github.com/ericrallen/coding-challenges",
+  "author": "Eric Allen",
+  "license": "MIT",
+  "private": true
+}
