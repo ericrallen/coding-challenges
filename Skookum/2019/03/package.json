@@ -1,0 +1,13 @@
+{
+  "name": "skookum-coding-challenge-2019-03",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Eric Allen",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^24.5.0"
+  }
+}
