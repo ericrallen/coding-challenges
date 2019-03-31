@@ -21,7 +21,7 @@ module.exports = {
 
     return parseFloat((newStormSize.width / earthDiameter).toFixed(2));
   },
-  partTwo: (cloudVolume) => {
+  partTwo: () => {
     const oldArea = calculateStormArea(oldStormSize);
     const newArea = calculateStormArea(newStormSize);
 
