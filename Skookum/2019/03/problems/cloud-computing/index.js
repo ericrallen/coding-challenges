@@ -7,6 +7,7 @@ module.exports = {
     const cloudDiameter = 10;
     const cloudHeight = 16 - cloudDiameter;
 
+    // volume of a cylinder is PI * radius^2 * height
     const cloudVolume = Math.floor(Math.PI * Math.pow(cloudDiameter / 2, 2) * cloudHeight);
 
     return cloudVolume;
@@ -25,4 +26,4 @@ module.exports = {
 
     return Math.floor(massOfWaterInCloud / densityOfWater / volumeOfOlympicSwimmingPool);
   }
-}
+};
