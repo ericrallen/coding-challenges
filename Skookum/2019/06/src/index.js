@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const fs = require('fs')
 const path = require('path')
 const crypto = require('crypto')
@@ -20,9 +18,6 @@ prompt._writeToOutput = function _writeToOutput(str) {
   }
 }
 
-// TODO: stop passing the password into this like an argument; prompt the user
-// and don't expose the password. It is currently viewable in the `.bash_history`
-// when using this utility.
 const [nodeExecutable, commandPath, alias] = process.argv;
 
 // const secret = secretParts.join(' ')
@@ -100,8 +95,6 @@ fs.readFile(dotSecretsPath, async (error, file) => {
     prompt.muted = false;
 
     prompt.question(prompt.query, function(action) {
-      console.log(action);
-
       if (action === '2') {
         prompt.query = `Secret message for ${alias}: `
 
@@ -120,7 +113,6 @@ fs.readFile(dotSecretsPath, async (error, file) => {
             prompt.close()
           })
         })
-        // update/storage logic here
       } else {
         prompt.close()
 
