@@ -1,5 +1,15 @@
 # June 2019 Coding Challenge
 
+## Usage
+
+`node ./src/index.js <alias>`
+
+Replace `<alias>` with the alias you'd like to use for this secret.
+
+**NOTE**: Alias names are only stored in hashed form and passwords are never stored
+so you can never retrieve them. This also means that multiple values can be stored
+for the same alias with different passwords.
+
 ## Code Golf
 
 The challenge is to accept an alias, password, and String and store that string for
@@ -13,7 +23,7 @@ specifically the following question:
 ## Notes
 
 My current solution is in `src/index.js` and has not been golfed yet, so it is currently
-too many bytes to worry about counting them.
+`3.65kb`.
 
 This solution encrypts the data at rest in a `~/.secrets` file and hashes each secret's
 alias so that they are not exposed when attempting to view the `~/.secrets` file.
