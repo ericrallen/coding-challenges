@@ -1,0 +1,12 @@
+{
+  "name": "secret-message-code-golf",
+  "version": "1.0.0",
+  "description": "A secret message store for a Code Golf code challenge",
+  "main": "lib/index.js",
+  "author": "ericrallen",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
